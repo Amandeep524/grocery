@@ -10,6 +10,7 @@ body {
 /* Top Navbar */
 
 .topNavbar {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,6 +84,107 @@ body {
     cursor: pointer;
 }
 
+.nav {
+    position: relative;
+}
+
+.loginPage {
+    position: absolute;
+    top: 0;
+    bottom: 50;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 80px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    width: 500px;
+    height: 500px;
+    -webkit-box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.87);
+    display: none;
+}
+
+
+.loginInput {
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.loginInput::placeholder {
+    color: rgb(163, 163, 163);
+}
+
+.loginHeading {
+    font-size: 20px;
+    color: wheat;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.loginButton1 {
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+    background-color: orange;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 45%;
+    -webkit-box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+
+}
+
+.loginButton2 {
+    position: absolute;
+    bottom: 0%;
+    right: 4%;
+    background-color: orange;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 45%;
+    -webkit-box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+
+}
+
+.close {
+    position: absolute;
+    border: 1px solid gray;
+    background-color: red;
+    color: white;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    right: 1%;
+    top: 1%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.loginButtonDiv {
+    display: flex;
+    justify-content: center;
+
+}
+
+.loginButton1 {
+    float: left;
+}
 
 
 /* Bottom Navbar */
@@ -100,8 +202,6 @@ body {
 
 /* Products */
 
-
-/* Products 1 */
 
 .productItems {
     display: flex;
