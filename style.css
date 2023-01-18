@@ -1,0 +1,364 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Navbar */
+
+/* Top Navbar */
+
+.topNavbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: gray;
+    height: 90px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.rightNav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.rightNav ul li {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.middleNav {
+    position: relative;
+    display: flex;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 10px 15px;
+    align-items: center;
+}
+
+.middleNav img {
+    position: absolute;
+    /* padding: 200px; */
+    right: 8%;
+    height: 20px;
+    width: 15px;
+}
+
+.navsearch {
+    padding: 150x;
+    width: 200px;
+    height: 30px;
+    border: none;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.navsearch::placeholder {
+    color: white;
+    font-size: 15px;
+}
+
+.login {
+    color: yellow;
+    cursor: pointer;
+}
+
+.cartButton {
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav {
+    position: relative;
+}
+
+.loginPage {
+    position: absolute;
+    top: 0;
+    bottom: 50;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 80px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    width: 500px;
+    height: 500px;
+    -webkit-box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.87);
+    display: none;
+}
+
+
+.loginInput {
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.loginInput::placeholder {
+    color: rgb(163, 163, 163);
+}
+
+.loginHeading {
+    font-size: 20px;
+    color: wheat;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.loginButton1 {
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+    background-color: orange;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 45%;
+    -webkit-box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+
+}
+
+.loginButton2 {
+    position: absolute;
+    bottom: 0%;
+    right: 4%;
+    background-color: orange;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 45%;
+    -webkit-box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+
+}
+
+.close {
+    position: absolute;
+    border: 1px solid gray;
+    background-color: red;
+    color: white;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    right: 1%;
+    top: 1%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.loginButtonDiv {
+    display: flex;
+    justify-content: center;
+
+}
+
+.loginButton1 {
+    float: left;
+}
+
+
+/* Bottom Navbar */
+
+
+
+.bottomNavbar {
+    display: flex;
+}
+
+.bottomNavImg {
+    width: 100%;
+    height: 450px;
+}
+
+/* Products */
+
+
+.productItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: cover;
+    padding-left: 10px;
+
+}
+
+.productItem {
+    width: fit-content;
+    border: 2px groove gray;
+    border-radius: 5px;
+    margin: 25px;
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.productItem:hover {
+    border: 2px solid green;
+    transition: 0.1s ease-in-out;
+
+}
+
+
+.productcardBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.addbutton {
+    background-color: lightgreen;
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.addbutton:hover {
+    background-color: white;
+    color: green;
+    transition: 0.1s ease-in-out;
+}
+
+.productImg {
+    width: 100%;
+    height: 175px;
+    cursor: pointer;
+}
+
+.productTitle {
+    font-weight: 300;
+}
+
+.productWgt {
+    font-weight: 200;
+    color: gray;
+    font-size: 20px;
+}
+
+.productPrice {
+    font-weight: 100;
+}
+
+/* features */
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    /* background-color: red; */
+}
+
+.feature {
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid gray;
+    float: left;
+    width: 50%;
+    margin: 20px;
+    /* background-color: gray; */
+}
+
+.featureImg {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featureHeading {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.featureDesc {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    color: gray;
+}
+
+/* Footer */
+
+.singleLine {
+    background-color: gray;
+    height: 0.1px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+}
+
+.footer li {
+    padding: 10px;
+    color: gray;
+}
+
+/* Payment Partners */
+
+.paymentOptions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.paymentImg {
+    width: 10%;
+    height: 80px;
+}
+
+/* Copywrite */
+
+.copywrite {
+    text-align: center;
+    color: gray;
+    cursor: pointer;
+    text-decoration: none;
+}
